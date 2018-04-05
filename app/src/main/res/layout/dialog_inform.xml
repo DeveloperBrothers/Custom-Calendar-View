@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tv_title"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_cross"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/multiply"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="Holiday"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_cross"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv_date"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="#939393"
+            android:layout_height="0.2dp"/>
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@+id/list_teachers"
+        android:divider="#004e4e4e"
+        android:layout_below="@+id/tv_title"
+        android:dividerHeight="0dp"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
